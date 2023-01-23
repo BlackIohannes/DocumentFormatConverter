@@ -1,0 +1,12 @@
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\bin\Debug\net6.0\DATA.deps.json
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\bin\Debug\net6.0\DATA.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\bin\Debug\net6.0\DATA.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.csproj.AssemblyReference.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.AssemblyInfoInputs.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.AssemblyInfo.cs
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.csproj.CoreCompileInputs.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\refint\DATA.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\DATA.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DATA\obj\Debug\net6.0\ref\DATA.dll

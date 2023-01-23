@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DATA": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DATA/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DATA.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DATA.dll": {}
+        }
+      },
+      "UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BLL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
+    "DATA/1.0.0": {
+      "type": "project",
+      "path": "../DATA/DATA.csproj",
+      "msbuildProject": "../DATA/DATA.csproj"
+    },
+    "UI/1.0.0": {
+      "type": "project",
+      "path": "../UI/UI.csproj",
+      "msbuildProject": "../UI/UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BLL >= 1.0.0",
+      "DATA >= 1.0.0",
+      "UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\John\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\DocumentFormatConverter\\DocumentFormatConverter.csproj",
+      "projectName": "DocumentFormatConverter",
+      "projectPath": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\DocumentFormatConverter\\DocumentFormatConverter.csproj",
+      "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\DocumentFormatConverter\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\DATA\\DATA.csproj": {
+              "projectPath": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\DATA\\DATA.csproj"
+            },
+            "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\UI\\UI.csproj": {
+              "projectPath": "C:\\Users\\John\\Documents\\TENESY INTERNSHIP\\DocumentFormatConverter\\UI\\UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

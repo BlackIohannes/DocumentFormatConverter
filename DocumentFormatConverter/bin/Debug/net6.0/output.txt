@@ -1,0 +1,12 @@
+GetDocs: Interface that implements GetDocs 
+Input: Just input 
+Output: Just output
+ 
+DocumentService: Class 
+Input: Takes in interfaces to be implemented 
+Output: Results
+ 
+HandleGetDocs: A DocumentService Method 
+Input: Method to handle getting documents 
+Output: none
+ 

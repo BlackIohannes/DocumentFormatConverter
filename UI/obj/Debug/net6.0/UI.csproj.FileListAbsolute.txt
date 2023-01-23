@@ -1,0 +1,17 @@
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\UI.deps.json
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\UI.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\UI.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.csproj.AssemblyReference.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.AssemblyInfoInputs.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.AssemblyInfo.cs
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.csproj.CoreCompileInputs.cache
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\refint\UI.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\ref\UI.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\BLL.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\DATA.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\BLL.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\bin\Debug\net6.0\DATA.pdb
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\UI\obj\Debug\net6.0\UI.csproj.CopyComplete
