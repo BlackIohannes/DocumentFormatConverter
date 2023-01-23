@@ -1,6 +1,10 @@
 using System.Reflection;
 using BLL.Interfaces;
 using DATA.Domain.Entities;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Newtonsoft.Json;
+using Document = iTextSharp.text.Document;
 
 namespace BLL.Implementation;
 
@@ -78,7 +82,33 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
 
     public void PrintOutput()
     {
-        Console.WriteLine("PrintOutput");
+        var textOutput = File.ReadAllText("output.txt");
+        Console.WriteLine("Text Output:");
+        Console.WriteLine(textOutput);
+
+        var jsonOutput = File.ReadAllText("output.json");
+        if (!string.IsNullOrEmpty(jsonOutput))
+        {
+            try
+            {
+                var deserializedJson = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(jsonOutput);
+                Console.WriteLine("Json Output:");
+                foreach (var item in deserializedJson)
+                {
+                    Console.WriteLine(item["Name"] + ": " + item["Description"]);
+                    Console.WriteLine("Input: " + item["Input"]);
+                    Console.WriteLine("Output: " + item["Output"]);
+                }
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine("Json Output: Invalid Json");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Json Output: Empty File");
+        }
     }
 
     public void GetDocsToJsonFile()
@@ -114,12 +144,39 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
             }
         }
 
-        // var json = JsonConverter.SerializeObject(output);
-        // File.WriteAllText("output.json", json);
+        var json = JsonConvert.SerializeObject(output);
+        File.WriteAllText("output.json", json);
     }
 
     public void GetDocsToPdf()
     {
-        Console.WriteLine("GetDocsToPdf");
+        var doc = new Document();
+        PdfWriter.GetInstance(doc, new FileStream("output.pdf", FileMode.Create));
+        doc.Open();
+        var types = Assembly.GetExecutingAssembly().GetTypes();
+        foreach (var type in types)
+        {
+            var attributes = type.GetCustomAttributes(typeof(DocumentAttribute), true);
+            foreach (DocumentAttribute attribute in attributes)
+            {
+                doc.Add(new Paragraph($"{type.Name}: {attribute.Description}"));
+                doc.Add(new Paragraph($"Input: {attribute.Input}"));
+                doc.Add(new Paragraph($"Output: {attribute.Output}"));
+            }
+
+            var members = type.GetMembers();
+            foreach (var member in members)
+            {
+                var memberAttributes = member.GetCustomAttributes(typeof(DocumentAttribute), true);
+                foreach (DocumentAttribute attribute in memberAttributes)
+                {
+                    doc.Add(new Paragraph($"{member.Name}: {attribute.Description}"));
+                    doc.Add(new Paragraph($"Input: {attribute.Input}"));
+                    doc.Add(new Paragraph($"Output: {attribute.Output}"));
+                }
+            }
+        }
+
+        doc.Close();
     }
 }

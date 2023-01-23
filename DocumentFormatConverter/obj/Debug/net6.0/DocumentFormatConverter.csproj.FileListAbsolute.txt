@@ -20,3 +20,6 @@ C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormat
 C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\obj\Debug\net6.0\DocumentFormatConverter.pdb
 C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\obj\Debug\net6.0\DocumentFormatConverter.genruntimeconfig.cache
 C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\obj\Debug\net6.0\ref\DocumentFormatConverter.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\John\Documents\TENESY INTERNSHIP\DocumentFormatConverter\DocumentFormatConverter\bin\Debug\net6.0\itextsharp.dll

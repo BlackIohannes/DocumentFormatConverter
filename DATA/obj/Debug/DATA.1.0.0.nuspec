@@ -6,7 +6,10 @@
     <authors>DATA</authors>
     <description>Package Description</description>
     <dependencies>
-      <group targetFramework="net6.0" />
+      <group targetFramework="net6.0">
+        <dependency id="Newtonsoft.Json" version="13.0.2" exclude="Build,Analyzers" />
+        <dependency id="iTextSharp" version="5.5.13.3" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>

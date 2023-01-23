@@ -13,4 +13,9 @@
       <ProjectReference Include="..\UI\UI.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    </ItemGroup>
+
 </Project>
