@@ -21,7 +21,7 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
         GetDocsToPdf();
     }
 
-    [Document(Description = "A DocumentService Method", Input = "Method to handle getting documents",
+    [Document(Description = "DocumentService Method", Input = "Method to handle getting documents",
         Output = "none\n")]
     public void HandleGetDocs()
     {
@@ -50,6 +50,8 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
         }
     }
 
+    [Document(Description = "Handles the coversion from Docs to text file", Input = "Takes in a string",
+        Output = "Returns a string\n")]
     public void GetDocsToTextFile()
     {
         var types = Assembly.GetExecutingAssembly().GetTypes();
@@ -80,6 +82,8 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
         File.WriteAllText("output.txt", output);
     }
 
+    [Document(Description = "Handles the display of output", Input = "none",
+        Output = "Returns a string\n")]
     public void PrintOutput()
     {
         var textOutput = File.ReadAllText("output.txt");
@@ -111,6 +115,8 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
         }
     }
 
+    [Document(Description = "Handles the coversion from Docs to a json file", Input = "Takes in a string",
+        Output = "Returns an object\n")]
     public void GetDocsToJsonFile()
     {
         var types = Assembly.GetExecutingAssembly().GetTypes();
@@ -148,6 +154,8 @@ public class DocumentService : DocumentAttribute, IDocument, IGetDocsToTextFiles
         File.WriteAllText("output.json", json);
     }
 
+    [Document(Description = "Handles the coversion from Docs to PDF", Input = "Takes in a string",
+        Output = "Returns a string in PDF format\n")]
     public void GetDocsToPdf()
     {
         var doc = new Document();

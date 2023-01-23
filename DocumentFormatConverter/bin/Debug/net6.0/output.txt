@@ -6,7 +6,23 @@ DocumentService: Class
 Input: Takes in interfaces to be implemented 
 Output: Results
  
-HandleGetDocs: A DocumentService Method 
+HandleGetDocs: DocumentService Method 
 Input: Method to handle getting documents 
 Output: none
+ 
+GetDocsToTextFile: Handles the coversion from Docs to text file 
+Input: Takes in a string 
+Output: Returns a string
+ 
+PrintOutput: Handles the display of output 
+Input: none 
+Output: Returns a string
+ 
+GetDocsToJsonFile: Handles the coversion from Docs to a json file 
+Input: Takes in a string 
+Output: Returns an object
+ 
+GetDocsToPdf: Handles the coversion from Docs to PDF 
+Input: Takes in a string 
+Output: Returns a string in PDF format
  
