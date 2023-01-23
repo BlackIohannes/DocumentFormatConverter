@@ -26,3 +26,15 @@ GetDocsToPdf: Handles the coversion from Docs to PDF
 Input: Takes in a string 
 Output: Returns a string in PDF format
  
+Description: Stores description 
+Input: none 
+Output: none
+ 
+Input: Stores input 
+Input: none 
+Output: none
+ 
+Output: Returns output 
+Input: none 
+Output: none
+ 
